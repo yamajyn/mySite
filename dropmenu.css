@@ -6,43 +6,57 @@
 .dropmenu{
   *zoom: 1;
   list-style-type: none;
-  width: 960px;
-  margin: 5px auto 30px;
+  width: 80%;
+  margin:10px auto 10px;
   padding: 0;
 	
 }
-.dropmenu:before, .dropmenu:after{
+.dropmenu:before{
   content: "";
   display: table;
 }
 .dropmenu:after{
+	content: "";
+  display: table;
   clear: both;
 }
 .dropmenu li{
   position: relative;
-  width: 20%;
+  width: 19%;
   float: left;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-.dropmenu li a{
+
+
+.dropmenu else li a{
   display: block;
   margin: 0;
-  padding: 15px 0 11px;
-  background: #ADADAD;
-  color: #fff;
-  font-size: 14px;
-	font-family: "ヒラギノ角ゴ Pro","游ゴシック体", "Yu Gothic", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "sans-serif";
+  padding: 15px 20px;
+  color: #141414;
+  font-size: 15px;
+　text-align: center; 
   line-height: 1;
   text-decoration: none;
+}
+
+.dropmenu img1 li:first-child{
+	display: block;
+	width: 5%;
+	padding-bottom: 3px;
+	bottom : 50%;
+  	color: #fff;
+	overflow: hidden;
+}
+.dropmenu img{
+	margin-top: 6px;
 }
 .dropmenu li ul{
   list-style: none;
   position: absolute;
   z-index: 9999;
   top: 100%;
-  left: 0;
   margin: 0;
   padding: 0;
 }
@@ -50,15 +64,90 @@
   width: 100%;
 }
 .dropmenu li ul li a{
-  padding: 13px 15px;
-  border-top: 1px solid #E7E7E7;
-  background: #B4B4B4;
-  text-align: left;
+  padding: 15px 15px;
+  text-align: center;
+	background: rgba(255,255,255,1);
 }
 .dropmenu li:hover > a{
-  background: #626262;
+	color: #717171;
+	
 }
 .dropmenu li a:hover{
-  background: #626262;
+	
+}
+
+@media screen and (max-width: 480px) {
+.dropmenu{
+  *zoom: 1;
+  list-style-type: none;
+  width: 80%;
+  margin:10px auto 10px;
+  padding: 0;
+	
+}
+.dropmenu:before{
+  content: "";
+  display: table;
+}
+.dropmenu:after{
+	content: "";
+  display: table;
+  clear: both;
+}
+.dropmenu li{
+  position: relative;
+  width: 19%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+.dropmenu else li a{
+  display: block;
+  margin: 0;
+  padding: 15px 20px;
+  color: #141414;
+  font-size: 5px;
+　text-align: center; 
+  line-height: 1;
+  text-decoration: none;
+}
+
+.dropmenu img1 li:first-child{
+	display: block;
+	width: 5%;
+	padding-bottom: 3px;
+	bottom : 50%;
+  	color: #fff;
+	overflow: hidden;
+}
+.dropmenu img{
+	margin-top: 6px;
+}
+.dropmenu li ul{
+  list-style: none;
+  position: absolute;
+  z-index: 9999;
+  top: 100%;
+  margin: 0;
+  padding: 0;
+}
+.dropmenu li ul li{
+  width: 100%;
+}
+.dropmenu li ul li a{
+  padding: 15px 15px;
+  text-align: center;
+	background: rgba(255,255,255,1);
+}
+.dropmenu li:hover > a{
+	color: #717171;
+	
+}
+.dropmenu li a:hover{
+	
+}
 }
 

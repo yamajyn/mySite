@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+
+html{
+	font-family: "ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo","游ゴシック体", "Yu Gothic",  "sans-serif";
+}
+header{
+	
+}
+
+body{  
+    margin: 0; 
+}  
+
+footer{
+	font-size: 10px;
+	text-align: center;
+}
