@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+#dropmenu li ul li{
+  overflow: hidden;
+  height: 0;
+  transition: .2s;
+}
+#dropmenu li:hover ul li{
+  overflow: visible;
+  height: 38px;
+}
