@@ -13,6 +13,11 @@ html,body{
 	padding-top:30px;    /* 上下に160pxを余白を取る */
 }  
 
+.text main{
+	position:relative;
+	margin-left: 150px;
+}
+
 footer{
 	font-size: 10px;
 	text-align: center;

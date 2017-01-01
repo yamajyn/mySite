@@ -6,7 +6,7 @@ div#header-fixed{
     top: 0px;                   /* 位置(上0px) */
     left: 0px;                  /* 位置(右0px) */
     width: 100%;                /* 横幅100%　*/
-    height: 55px;              /* 縦幅140px */
+    height: 50px;              /* 縦幅140px */
 	background: rgba(255,255,255,0.97);
 	z-index: 9999;
 }
@@ -14,11 +14,9 @@ div#header-fixed{
 .dropmenu {
 	list-style-type: none;
 	width: 80%;
-	height: 50px;
 	margin: auto;
-	margin-top: 10px;
-	padding: 0;
-	position: auto;
+	padding-top: 5px;
+	position: center;
 }
 .dropmenu:before {
 	content: "";
@@ -55,7 +53,7 @@ div#header-fixed{
 	overflow: hidden;
 }
 .dropmenu img {
-	margin-top: 0px;
+	margin-top: 5px;
 }
 .dropmenu li ul {
 	list-style: none;

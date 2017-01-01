@@ -1,15 +1,17 @@
 <!doctype html>
 
 <html>
-
-
 <head>
 <meta charset="UTF-8">
-<title>Home</title>
+<title>Home | Junya Works</title>
 <link href="dropmenu.css" rel="stylesheet" type="text/css">
 <link href="images.css" rel="stylesheet" type="text/css">
 <link href="all.css" rel="stylesheet" type="text/css">
-
+<link rel="stylesheet" href="swiper.min.css">
+<script src="swiper.min.js"></script>
+<script>
+var swiper = new Swiper('.swiper-container');
+</script>
 <div id="header-fixed">
   <ul id="dropmenu" class="dropmenu">
     <img1>
@@ -60,21 +62,54 @@
     </else>
   </ul>
 </div>
-
 </head>
 
-
-<body id="images" class="images">
-<img src="img/IMG_2361.PNG" width="1136" height="640" alt=""/>
-<div class="buttonR">
-	<circle>
-		
-	</circle>
+<body>
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+	  <div class="swiper-slide"> <a href="uteshimu.html"><img src="img/uteshimu01.PNG" alt=""/></a>
+      <p><h1>ウテシム2D</h1></p>
+    </div>
+    <div class="swiper-slide"> <img src="img/tank01.jpg" alt=""/>
+      <p><h1>TankAnimation</h1></p>
+    </div>
+    <div class="swiper-slide"> <img src="img/tank01.jpg" alt=""/>
+      <p><h1>battle ship</h1></p>
+    </div>
+  </div>
+  <div class="swiper-pagination swiper-pagination-white"></div>
+  <div class="swiper-button-prev swiper-button-white"></div>
+  <div class="swiper-button-next swiper-button-white"></div>
+</div>
+<div id="all" class="text">
+  <main>
+    <h4>
+      <p>更新情報</p>
+    </h4>
+    <p>2017.1.1 開設</p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+  </main>
 </div>
 </body>
-
-
 <footer>
   <p>COPYRIGHT &#169; YAMAMOTO JUNYA ALL RIGHTS RESERVED.</p>
 </footer>
 </html>
+<script>
+var swiper = new Swiper('.swiper-container', {
+	pagination: '.swiper-pagination',
+	paginationClickable: true,
+	parallax: true,
+	speed: 1000,
+	nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+	loop: true,
+	centeredSlides: true,
+	calculateHeight: true,
+	autoplay:4000,
+});
+</script>

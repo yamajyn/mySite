@@ -49,3 +49,7 @@
 #dropmenu li ul li:nth-last-of-type(4) {
   transition-delay: .3s;
 }
+
+#images img{
+	visibility: hidden;
+}
