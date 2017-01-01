@@ -14,6 +14,8 @@
  */
 
 .swiper-slide img {
+	margin-left: auto;
+	margin-right: auto;
 	border-radius: 15px;
 	width: auto;
 	height: auto;
@@ -38,6 +40,7 @@
 	margin-right: auto;
 	position: relative;
 	overflow: hidden;
+	height:auto;
 	width: 80%;
 	z-index: 1
 }
