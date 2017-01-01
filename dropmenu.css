@@ -1,13 +1,12 @@
 @charset "UTF-8";
 @import url("animation.css");
 
-
-
 .dropmenu{
   *zoom: 1;
   list-style-type: none;
   width: 80%;
-  margin:10px auto 10px;
+	margin:auto;
+  margin-top:10px;
   padding: 0;
 	
 }
@@ -44,13 +43,12 @@
 .dropmenu img1 li:first-child{
 	display: block;
 	width: 5%;
-	padding-bottom: 3px;
 	bottom : 50%;
   	color: #fff;
 	overflow: hidden;
 }
 .dropmenu img{
-	margin-top: 6px;
+	margin-top: 0px;
 }
 .dropmenu li ul{
   list-style: none;
@@ -59,95 +57,68 @@
   top: 100%;
   margin: 0;
   padding: 0;
+	width: 100%;
 }
 .dropmenu li ul li{
   width: 100%;
 }
 .dropmenu li ul li a{
-  padding: 15px 15px;
+  padding: 11px 15px;
   text-align: center;
-	background: rgba(255,255,255,1);
+	background: rgba(255,255,255,0.7);
 }
-.dropmenu li:hover > a{
-	color: #717171;
-	
+
+/*Games*/
+.dropmenu else > li:nth-child(1):hover > a{
+	transition: color 0.3s ease 0s;
+	color: #63C1D4;
 }
+.dropmenu games li:hover > a{
+	transition: color 0.3s ease 0s;
+	color: #63C1D4;
+}
+/*App*/
+.dropmenu else > li:nth-child(2):hover > a{
+	transition: color 0.3s ease 0s;
+	color: #913939;
+}
+.dropmenu app li:hover > a{
+	transition: color 0.3s ease 0s;
+	color: #913939;
+}
+/*Product*/
+.dropmenu else > li:nth-child(3):hover > a{
+	transition: color 0.3s ease 0s;
+	color: #A39A7E;
+}
+.dropmenu product li:hover > a{
+	transition: color 0.3s ease 0s;
+	color: #A39A7E;
+}
+/*3D*/
+.dropmenu else > li:nth-child(4):hover > a{
+	transition: color 0.3s ease 0s;
+	color: #0514C9 ;
+}
+.dropmenu model li:hover > a{
+	transition: color 0.3s ease 0s;
+	color: #0514C9;
+}
+/*about*/
+.dropmenu else > li:nth-child(5):hover > a{
+	transition: color 0.3s ease 0s;
+	color: #0050CF ;
+}
+.dropmenu about li:hover > a{
+	transition: color 0.3s ease 0s;
+	color: #0050CF;
+}
+
+
 .dropmenu li a:hover{
-	
 }
 
 @media screen and (max-width: 480px) {
-.dropmenu{
-  *zoom: 1;
-  list-style-type: none;
-  width: 80%;
-  margin:10px auto 10px;
-  padding: 0;
 	
-}
-.dropmenu:before{
-  content: "";
-  display: table;
-}
-.dropmenu:after{
-	content: "";
-  display: table;
-  clear: both;
-}
-.dropmenu li{
-  position: relative;
-  width: 19%;
-  float: left;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-
-.dropmenu else li a{
-  display: block;
-  margin: 0;
-  padding: 15px 20px;
-  color: #141414;
-  font-size: 5px;
-　text-align: center; 
-  line-height: 1;
-  text-decoration: none;
-}
-
-.dropmenu img1 li:first-child{
-	display: block;
-	width: 5%;
-	padding-bottom: 3px;
-	bottom : 50%;
-  	color: #fff;
-	overflow: hidden;
-}
-.dropmenu img{
-	margin-top: 6px;
-}
-.dropmenu li ul{
-  list-style: none;
-  position: absolute;
-  z-index: 9999;
-  top: 100%;
-  margin: 0;
-  padding: 0;
-}
-.dropmenu li ul li{
-  width: 100%;
-}
-.dropmenu li ul li a{
-  padding: 15px 15px;
-  text-align: center;
-	background: rgba(255,255,255,1);
-}
-.dropmenu li:hover > a{
-	color: #717171;
-	
-}
-.dropmenu li a:hover{
-	
-}
 }
 
