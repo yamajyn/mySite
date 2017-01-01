@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.images img {
+	position: relative;
+	display:block;
+	margin-right:auto;
+	margin-left:auto;
+	border-radius: 15px;
+	width:80%;
+}
