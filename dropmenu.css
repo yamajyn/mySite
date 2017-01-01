@@ -1,124 +1,126 @@
 @charset "UTF-8";
 @import url("animation.css");
 
-.dropmenu{
-  *zoom: 1;
-  list-style-type: none;
-  width: 80%;
-	margin:auto;
-  margin-top:10px;
-  padding: 0;
-	
+div#header-fixed{
+	position: fixed;            /* ヘッダーの固定 */
+    top: 0px;                   /* 位置(上0px) */
+    left: 0px;                  /* 位置(右0px) */
+    width: 100%;                /* 横幅100%　*/
+    height: 55px;              /* 縦幅140px */
+	background: rgba(255,255,255,0.97);
+	z-index: 9999;
 }
-.dropmenu:before{
-  content: "";
-  display: table;
+
+.dropmenu {
+	list-style-type: none;
+	width: 80%;
+	height: 50px;
+	margin: auto;
+	margin-top: 10px;
+	padding: 0;
+	position: auto;
 }
-.dropmenu:after{
+.dropmenu:before {
 	content: "";
-  display: table;
-  clear: both;
+	display: table;
 }
-.dropmenu li{
-  position: relative;
-  width: 19%;
-  float: left;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+.dropmenu:after {
+	content: "";
+	display: table;
+	clear: both;
 }
-
-
-.dropmenu else li a{
-  display: block;
-  margin: 0;
-  padding: 15px 20px;
-  color: #141414;
-  font-size: 15px;
-　text-align: center; 
-  line-height: 1;
-  text-decoration: none;
+.dropmenu li {
+	position: relative;
+	width: 19%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-align: center;
 }
-
-.dropmenu img1 li:first-child{
+.dropmenu else li a {
+	display: block;
+	margin: 0;
+	padding: 15px 20px;
+	color: #141414;
+	font-size: 15px;
+	　text-align: center;
+	line-height: 1;
+	text-decoration: none;
+}
+.dropmenu img1 li:first-child {
 	display: block;
 	width: 5%;
 	bottom : 50%;
-  	color: #fff;
+	color: #fff;
 	overflow: hidden;
 }
-.dropmenu img{
+.dropmenu img {
 	margin-top: 0px;
 }
-.dropmenu li ul{
-  list-style: none;
-  position: absolute;
-  z-index: 9999;
-  top: 100%;
-  margin: 0;
-  padding: 0;
+.dropmenu li ul {
+	list-style: none;
+	position: absolute;
+	z-index: 9999;
+	top: 100%;
+	margin: 0;
+	padding: 0;
 	width: 100%;
 }
-.dropmenu li ul li{
-  width: 100%;
+.dropmenu li ul li {
+	width: 100%;
 }
-.dropmenu li ul li a{
-  padding: 11px 15px;
-  text-align: center;
-	background: rgba(255,255,255,0.7);
+.dropmenu li ul li a {
+	padding: 11px 15px;
+	text-align: center;
+	background: rgba(255,255,255,0.96);
 }
-
 /*Games*/
-.dropmenu else > li:nth-child(1):hover > a{
+.dropmenu else > li:nth-child(1):hover > a {
 	transition: color 0.3s ease 0s;
 	color: #63C1D4;
 }
-.dropmenu games li:hover > a{
+.dropmenu games li:hover > a {
 	transition: color 0.3s ease 0s;
 	color: #63C1D4;
 }
 /*App*/
-.dropmenu else > li:nth-child(2):hover > a{
+.dropmenu else > li:nth-child(2):hover > a {
 	transition: color 0.3s ease 0s;
 	color: #913939;
 }
-.dropmenu app li:hover > a{
+.dropmenu app li:hover > a {
 	transition: color 0.3s ease 0s;
 	color: #913939;
 }
 /*Product*/
-.dropmenu else > li:nth-child(3):hover > a{
+.dropmenu else > li:nth-child(3):hover > a {
 	transition: color 0.3s ease 0s;
 	color: #A39A7E;
 }
-.dropmenu product li:hover > a{
+.dropmenu product li:hover > a {
 	transition: color 0.3s ease 0s;
 	color: #A39A7E;
 }
 /*3D*/
-.dropmenu else > li:nth-child(4):hover > a{
+.dropmenu else > li:nth-child(4):hover > a {
 	transition: color 0.3s ease 0s;
-	color: #0514C9 ;
+	color: #0514C9;
 }
-.dropmenu model li:hover > a{
+.dropmenu model li:hover > a {
 	transition: color 0.3s ease 0s;
 	color: #0514C9;
 }
 /*about*/
-.dropmenu else > li:nth-child(5):hover > a{
-	transition: color 0.3s ease 0s;
-	color: #0050CF ;
-}
-.dropmenu about li:hover > a{
+.dropmenu else > li:nth-child(5):hover > a {
 	transition: color 0.3s ease 0s;
 	color: #0050CF;
 }
-
-
-.dropmenu li a:hover{
+.dropmenu about li:hover > a {
+	transition: color 0.3s ease 0s;
+	color: #0050CF;
+}
+.dropmenu li a:hover {
 }
 
 @media screen and (max-width: 480px) {
-	
 }
-

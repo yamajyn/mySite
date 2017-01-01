@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/*
 #dropmenu li ul li{
   overflow: hidden;
   height: 0;
@@ -8,4 +8,44 @@
 #dropmenu li:hover ul li{
   overflow: visible;
   height: 38px;
+}*/
+
+#dropmenu ul {
+  visibility: hidden;
+  perspective: 400px;
+}
+#dropmenu li:hover ul{
+  visibility: visible;
+}
+#dropmenu ul li{
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0;
+  transition: .1s;
+}
+#dropmenu li:hover ul li{
+  transform: rotateX(0);
+}
+#dropmenu li:hover ul li:nth-child(1) {
+  transition-delay: 0s;
+}
+#dropmenu li:hover ul li:nth-child(2) {
+  transition-delay: .1s;
+}
+#dropmenu li:hover ul li:nth-child(3) {
+  transition-delay: .2s;
+}
+#dropmenu li:hover ul li:nth-child(4) {
+  transition-delay: .3s;
+}
+#dropmenu li ul li:nth-last-of-type(1) {
+  transition-delay: 0s;
+}
+#dropmenu li ul li:nth-last-of-type(2) {
+  transition-delay: .1s;
+}
+#dropmenu li ul li:nth-last-of-type(3) {
+  transition-delay: .2s;
+}
+#dropmenu li ul li:nth-last-of-type(4) {
+  transition-delay: .3s;
 }
