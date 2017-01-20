@@ -6,19 +6,110 @@
 
 
 html,body{
-	margin: 0;         /* 余白の削除 */
-    padding: 0;        /* 余白の削除 */
+    padding: 0;
     width:100%;
     height:100%;
-	padding-top:30px;    /* 上下に160pxを余白を取る */
+	padding-top:30px;
+	margin-bottom:100px;
 }  
 
-.text main{
-	position:relative;
-	margin-left: 150px;
+body{
+user-select:none; 
+-webkit-user-select:none;
+-moz-user-select:none;
+-khtml-user-select:none;
+-webkit-user-drag:none; 
+-khtml-user-drag:none; 
 }
 
 footer{
 	font-size: 10px;
 	text-align: center;
+	margin-bottom:10px;
+}
+f1 {
+	margin-left: 10px;
+	font-size: 2.4vw;
+}
+f5 {
+	margin-left: 20px;
+	font-size: 1.2vw;
+}
+.button a:link{
+	text-decoration:none;
+	color:black;
+	transition:0.5s;
+}
+.button a:hover{
+	color:white;
+	transition:0.3s;
+}
+
+.topprofile{
+	width: 25%;
+	float:left;
+	margin-left: 30px;
+	margin-top: 150px;
+	font-size: 1.5vw;
+}
+.profile{
+	width: 35%;
+	float:left;
+	margin-left: 80px;
+	margin-top: 5vw;
+	font-size: 1.5vw;
+}
+.profile p{
+	line-height: 2.5vw;
+}
+.pict{
+	margin-top:5vw;
+	width: 40%;
+	float:left;
+}
+
+.pictmini{
+	margin-top:100px;
+	width: 15%;
+	float:left;
+}
+.pictmini img{
+	width: 100%;
+}
+
+.pictmini p{
+	
+}
+.pict img{
+	border-radius:5vw;
+}
+
+.info {
+	position: relative;
+	font-size: 1.5vw;
+	margin-top:50px;
+	vertical-align: top;
+	text-align: justify;
+	text-justify: inter-ideograph;
+	width:45%;
+	float:left;
+}
+.info p{
+	margin-left:40%;
+}
+
+.setting{
+	width:100%;
+	height:500px;
+	text-align: center;
+}
+.setting p{
+	margin-top:100px;
+	font-size:4vw;
+}
+
+.caution{
+	margin-top:-10px;
+	margin-left:55%;
+	margin-bottom:-20px;
 }
