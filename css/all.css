@@ -1,32 +1,76 @@
 @charset "UTF-8";
-
-*{
-	font-family: "ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo","游ゴシック体", "Yu Gothic",  "sans-serif";
+* {
+	font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "游ゴシック体", "Yu Gothic", "sans-serif";
+	font-weight: 100;
 }
 
-
-html,body{
-    padding: 0;
-    width:100%;
-    height:100%;
-	padding-top:30px;
-	margin-bottom:100px;
-}  
-
-body{
-user-select:none; 
--webkit-user-select:none;
--moz-user-select:none;
--khtml-user-select:none;
--webkit-user-drag:none; 
--khtml-user-drag:none; 
+body {
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
 }
-
-footer{
+footer {
 	font-size: 10px;
 	text-align: center;
-	margin-bottom:10px;
+	margin-bottom: 10px;
 }
+
+.button a:link {
+	text-decoration: none;
+	color: black;
+	transition: 0.5s;
+}
+.button a:hover {
+	color: white;
+	transition: 0.3s;
+}
+
+.pict {
+	margin-top: 5vw;
+	width: 40%;
+	float: left;
+}
+.pict img {
+	border-radius: 3vw;
+}
+.setting {
+	width: 100%;
+	height: 500px;
+	text-align: center;
+}
+.setting p {
+	margin-top: 100px;
+	font-size: 4vw;
+}
+
+.video{
+position: relative;
+height: 0;
+padding: 0px 0 56.25%;
+overflow: hidden;
+}
+
+.video iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+@media screen and (min-width:480px) {
+	
+html, body {
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 30px;
+	margin-bottom: 100px;
+}
+	
 f1 {
 	margin-left: 10px;
 	font-size: 2.4vw;
@@ -35,81 +79,146 @@ f5 {
 	margin-left: 20px;
 	font-size: 1.2vw;
 }
-.button a:link{
-	text-decoration:none;
-	color:black;
-	transition:0.5s;
-}
-.button a:hover{
-	color:white;
-	transition:0.3s;
-}
-
-.topprofile{
+.topprofile {
 	width: 25%;
-	float:left;
-	margin-left: 30px;
-	margin-top: 150px;
+	float: left;
+	margin-left: 1vw;
+	margin-top: 9vw;
 	font-size: 1.5vw;
 }
-.profile{
-	width: 35%;
-	float:left;
-	margin-left: 80px;
-	margin-top: 5vw;
-	font-size: 1.5vw;
+.topprofile ul {
+	list-style-position: outside;
+	margin-left: -2vw;
 }
-.profile p{
-	line-height: 2.5vw;
+.topprofile li {
+	list-style-type: none;
+	line-height: 2.8vw;
 }
-.pict{
-	margin-top:5vw;
-	width: 40%;
-	float:left;
+.topprofile p {
+	font-size: 2vw;
 }
-
-.pictmini{
-	margin-top:100px;
+.pictmini {
+	margin-top: 3vw;
+	margin-left: 2vw;
 	width: 15%;
-	float:left;
+	float: left;
 }
-.pictmini img{
+.pictmini img {
 	width: 100%;
 }
-
-.pictmini p{
-	
+.pictmini p {
+	font-size: 2.5vw;
 }
-.pict img{
-	border-radius:5vw;
+	.profile {
+	width: 50%;
+	float: left;
+	margin-left: 5vw;
+	margin-top: 5vw;
+	font-size: 2vw;
 }
-
+.profile ul {
+	margin-top: 1vw;
+	font-size: 1.5vw;
+}
+.profile li {
+	line-height: 3.5vw;
+	list-style-type: none;
+}
 .info {
 	position: relative;
 	font-size: 1.5vw;
-	margin-top:50px;
+	margin-top: 50px;
 	vertical-align: top;
 	text-align: justify;
 	text-justify: inter-ideograph;
-	width:45%;
-	float:left;
+	width: 45%;
+	float: left;
 }
-.info p{
-	margin-left:40%;
+.info p {
+	margin-left: 40%;
 }
-
-.setting{
-	width:100%;
-	height:500px;
-	text-align: center;
+	.caution {
+	margin-top: -10px;
+	margin-left: 55%;
+	margin-bottom: -20px;
 }
-.setting p{
-	margin-top:100px;
-	font-size:4vw;
 }
 
-.caution{
-	margin-top:-10px;
-	margin-left:55%;
-	margin-bottom:-20px;
+@media screen and (max-width: 480px) {
+	
+	html, body {
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	padding-top:50px;
+	margin-bottom: 100px;
+}
+	
+f1 {
+	margin-left: 10px;
+	font-size: 5.4vw;
+}
+f5 {
+	margin-left: 20px;
+	font-size: 3.2vw;
+}
+.topprofile {
+	margin-top: 18vw;
+	font-size: 3.5vw;
+}
+.topprofile li {
+	list-style-type: none;
+	line-height: 7.8vw;
+}
+.topprofile p {
+	font-size: 5vw;
+}
+.pictmini {
+	margin-top: 2vw;
+	margin-left: 10%;
+	margin-right:5%;
+	width: 40%;
+	float: left;
+}
+.pictmini img {
+	width: 100%;
+	margin-top: -2vw;
+}
+.pictmini p {
+	font-size: 5.0vw;
+}
+.info {
+	position: relative;
+	font-size: 3.5vw;
+	margin-top: 1vw;
+	vertical-align: top;
+	text-align: justify;
+	text-justify: inter-ideograph;
+	width: 45%;
+}
+.info p {
+	margin-left: 20%;
+}
+	.profile {
+	width: 50%;
+	float: left;
+	margin-left: 3vw;
+		margin-bottom: 50vw;
+	font-size: 3vw;
+}
+.profile ul {
+	margin-top: 1vw;
+	margin-left: -3vw;
+	font-size: 3.5vw;
+}
+.profile li {
+	line-height: 5.5vw;
+	list-style-type: none;
+}
+	.caution {
+	margin-top: -10px;
+	margin-left: 45%;
+	margin-bottom: -20px;
+	font-size: 10px;
+}
 }
