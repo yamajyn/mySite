@@ -3,7 +3,6 @@
 	font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "游ゴシック体", "Yu Gothic", "sans-serif";
 	font-weight: 100;
 }
-
 body {
 	user-select: none;
 	-webkit-user-select: none;
@@ -17,7 +16,9 @@ footer {
 	text-align: center;
 	margin-bottom: 10px;
 }
-
+#fc2_footer {
+	width:70%;
+}
 .button a:link {
 	text-decoration: none;
 	color: black;
@@ -26,15 +27,6 @@ footer {
 .button a:hover {
 	color: white;
 	transition: 0.3s;
-}
-
-.pict {
-	margin-top: 5vw;
-	width: 40%;
-	float: left;
-}
-.pict img {
-	border-radius: 3vw;
 }
 .setting {
 	width: 100%;
@@ -45,39 +37,163 @@ footer {
 	margin-top: 100px;
 	font-size: 4vw;
 }
-
-.video{
-position: relative;
-height: 0;
-padding: 0px 0 56.25%;
-overflow: hidden;
+.video {
+	position: relative;
+	height: 0;
+	padding: 0px 0 56.25%;
+	overflow: hidden;
 }
-
 .video iframe {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
-@media screen and (min-width:480px) {
+.video-smart {
 	
+	position: relative;
+	height: 0;
+	padding: 0px 0 177.5%;
+	overflow: hidden;
+}
+.video-smart iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (max-width: 480px) {
 html, body {
 	padding: 0;
 	width: 100%;
 	height: 100%;
-	padding-top: 30px;
+	padding-top: 10vw;
 	margin-bottom: 100px;
 }
+f1 {
+	margin-left: 1vw;
+	font-size: 6.4vw;
+}
+f5 {
+	margin-left: 3vw;
+	font-size: 4.2vw;
+}
+.topprofile {
+	margin-top: 18vw;
+	font-size: 3.5vw;
+}
+.topprofile li {
+	list-style-type: none;
+	line-height: 7.8vw;
+}
+.topprofile p {
+	font-size: 5vw;
+}
+.pictmini {
+	margin-top: 2vw;
+	margin-left: 10%;
+	margin-right: 5%;
+	width: 40%;
+	float: left;
+}
+.pictmini img {
+	width: 100%;
+	margin-top: -2vw;
+}
+.pictmini p {
+	font-size: 5.0vw;
+}
+.info {
+	position: relative;
+	font-size: 3.5vw;
+	margin-top: 1vw;
+	vertical-align: top;
+	text-align: justify;
+	text-justify: inter-ideograph;
+	width: 85%;
+}
+.info p {
+	margin-left: 20%;
+}
+.profile {
+	width: 100%;
+	margin-top: 4vw;
+	margin-left: 6vw;
+	margin-bottom: 50vw;
+	font-size: 3vw;
+}	
+.profile img{
+	margin-left: 10%;
+	margin-right:auto;
 	
+}
+.profile ul {
+	margin-top: 1vw;
+	margin-left: -3vw;
+	font-size: 3.5vw;
+}
+.profile li {
+	line-height: 6.5vw;
+	list-style-type: none;
+}
+.pict {
+	margin-right:auto;
+	margin-left:auto;
+	margin-top: 7vw;
+	width: 50%;
+}
+.pict img {
+	border-radius: 3vw;
+}
+.caution {
+	margin-top: -10px;
+	margin-left: 45%;
+	margin-bottom: -20px;
+	font-size: 10px;
+}
+.video-smartwidth{
+	margin-right:10vw;
+	margin-left:10vw;
+}
+.share-wrap{
+	margin-top:10px;
+	margin-bottom:50px;
+	position:relative;
+	margin-left:15%;
+}
+.tw-button{
+	float: left; 
+}
+.fb-button{
+	float: left; 
+	line-height: 0;
+	margin-left:3%;
+}
+.line-button{
+	float: left; 
+	margin-left:3%;
+}
+}
+
+@media screen and (min-width:481px) {
+html, body {
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 22px;
+	margin-bottom: 100px;
+}
 f1 {
 	margin-left: 10px;
-	font-size: 2.4vw;
+	font-size: 3.0vw;
 }
 f5 {
 	margin-left: 20px;
-	font-size: 1.2vw;
+	font-size: 1.5vw;
 }
 .topprofile {
 	width: 25%;
@@ -109,12 +225,15 @@ f5 {
 .pictmini p {
 	font-size: 2.5vw;
 }
-	.profile {
+.profile {
 	width: 50%;
 	float: left;
 	margin-left: 5vw;
 	margin-top: 5vw;
 	font-size: 2vw;
+}
+.profile img{
+	 float:left;
 }
 .profile ul {
 	margin-top: 1vw;
@@ -123,6 +242,14 @@ f5 {
 .profile li {
 	line-height: 3.5vw;
 	list-style-type: none;
+}
+.pict {
+	margin-top: 5vw;
+	width: 40%;
+	float: left;
+}
+.pict img {
+	border-radius: 3vw;
 }
 .info {
 	position: relative;
@@ -137,88 +264,30 @@ f5 {
 .info p {
 	margin-left: 40%;
 }
-	.caution {
+.caution {
 	margin-top: -10px;
 	margin-left: 55%;
 	margin-bottom: -20px;
 }
+.video-smartwidth{
+	margin-top:10vw;
+	margin-left: 23vw;
+	margin-right: 23vw;
 }
-
-@media screen and (max-width: 480px) {
-	
-	html, body {
-	padding: 0;
-	width: 100%;
-	height: 100%;
-	padding-top:50px;
-	margin-bottom: 100px;
+.share-wrap{
+	position:relative;
+	margin-left:65%;
 }
-	
-f1 {
-	margin-left: 10px;
-	font-size: 5.4vw;
+.tw-button{
+	float: left; 
 }
-f5 {
-	margin-left: 20px;
-	font-size: 3.2vw;
+.fb-button{
+	float: left; 
+	line-height: 0;
+	margin-left:3%;
 }
-.topprofile {
-	margin-top: 18vw;
-	font-size: 3.5vw;
-}
-.topprofile li {
-	list-style-type: none;
-	line-height: 7.8vw;
-}
-.topprofile p {
-	font-size: 5vw;
-}
-.pictmini {
-	margin-top: 2vw;
-	margin-left: 10%;
-	margin-right:5%;
-	width: 40%;
-	float: left;
-}
-.pictmini img {
-	width: 100%;
-	margin-top: -2vw;
-}
-.pictmini p {
-	font-size: 5.0vw;
-}
-.info {
-	position: relative;
-	font-size: 3.5vw;
-	margin-top: 1vw;
-	vertical-align: top;
-	text-align: justify;
-	text-justify: inter-ideograph;
-	width: 45%;
-}
-.info p {
-	margin-left: 20%;
-}
-	.profile {
-	width: 50%;
-	float: left;
-	margin-left: 3vw;
-		margin-bottom: 50vw;
-	font-size: 3vw;
-}
-.profile ul {
-	margin-top: 1vw;
-	margin-left: -3vw;
-	font-size: 3.5vw;
-}
-.profile li {
-	line-height: 5.5vw;
-	list-style-type: none;
-}
-	.caution {
-	margin-top: -10px;
-	margin-left: 45%;
-	margin-bottom: -20px;
-	font-size: 10px;
+.line-button{
+	float: left; 
+	margin-left:3%;
 }
 }
