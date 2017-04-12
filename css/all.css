@@ -1,7 +1,8 @@
 @charset "UTF-8";
+
 * {
 	font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "游ゴシック体", "Yu Gothic", "sans-serif";
-	font-weight: 100;
+/*	font-weight: 100;*/
 }
 body {
 	user-select: none;
@@ -10,6 +11,7 @@ body {
 	-khtml-user-select: none;
 	-webkit-user-drag: none;
 	-khtml-user-drag: none;
+	
 }
 footer {
 	font-size: 10px;
@@ -161,9 +163,9 @@ f5 {
 }
 .share-wrap{
 	margin-top:10px;
-	margin-bottom:50px;
+	margin-bottom:0px;
 	position:relative;
-	margin-left:15%;
+	margin-left:10%;
 }
 .tw-button{
 	float: left; 
@@ -277,6 +279,7 @@ f5 {
 .share-wrap{
 	position:relative;
 	margin-left:65%;
+	 margin-top:0;
 }
 .tw-button{
 	float: left; 
